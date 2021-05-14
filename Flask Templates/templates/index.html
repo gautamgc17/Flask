@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+</head>
+<body>
+	<h1>This is Home Page</h1>
+	<a href="http://127.0.0.1:5000/about">Click here to go to About url</a>
+
+	<h2>My Friends List</h2>
+
+    <!-- running python code in html using jinja template -->
+	{% for f in my_friends %}     
+	<h4> {{f}} </h4>
+	{% endfor %}
+
+	{% if number > 3 %}
+	    <p> Count of friends is = {{number}} which is greater than 3 </p>
+	{% elif number == 3 %}
+	    <p>  Count of friends is = {{number}} </p>
+	{% else %}
+	    <p>  Count of friends is = {{number}} which is less than 3 </p>
+	{% endif %}
+
+
+</body>
+</html>
