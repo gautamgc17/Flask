@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+</head>
+<body>
+	<h1>This is Home Page</h1>
+	<a href="http://127.0.0.1:5000/about">Click here to go to About url</a>
+
+	<h2>My Friends List</h2>
+
+	<hr><br>
+	
+	<!-- file upload in Flask requires an HTML form whose enctype property is set to "multipart/form-data" to publish file to URL-->
+	<form action="/submit" method="POST" autocomplete="on" enctype="multipart/form-data">  
+		<label for="username">Enter username: </label>
+		<input type="text" name="username" placeholder="Name" required="" id="" value=""><br>
+
+		<label for="age">Enter Age: </label>
+		<input type="number" name="age" placeholder="Age" id="" value=""><br>
+
+		<label for="userfile">Upload your file: </label>
+		<input type="file" name="userfile" id="" value="" placeholder="File"><br><br>
+
+		<input type="submit" name="" id="">
+
+	</form>
+
+
+</body>
+</html>
